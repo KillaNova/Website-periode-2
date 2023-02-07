@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <!-- Hier de link gemaakt voor de font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <!-- Css link (In Github zal het er anders uit zien, omdat Github het anders niet wil oppakken) -->
-    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <title>Document</title>
 </head>
 
@@ -22,13 +24,10 @@
                 <a href="index.html">Homepage</a>
             </li>
             <li>
-                <a href="Aboutme.html">About me</a>
+                <a href="aboutme.html">About me</a>
             </li>
             <li>
                 <a href="motivatie-cv.html">Motivatie/CV</a>
-            </li>
-            <li>
-                <a href="vaardigheden.html">Vaardigheden</a>
             </li>
             <li>
                 <a href="contactpage.html">Contact</a>
@@ -37,19 +36,21 @@
     </nav>
     <!-- Header is simpel 2 foto's -->
     <header>
-        <img class="foto" src="CV-Foto.jpg" alt="CV-Foto">
-        <img src="pexels-bruno-scramgnon-5007442.jpg" alt="Moon">
+        <img class="foto" src="img/cv-foto.jpg" alt="cv-foto">
+        <img src="img/pexels-bruno-scramgnon-5007442.jpg" alt="moon">
 
     </header>
     <!-- Maak gebruik van meerdere mains omdat sections en articles niet mee wilden werken -->
     <main>
         <!-- Na het horen van klas genoten dat je zo min mogelijk gebruik moesten maken van div's is mijn code daar ook voor aangepast -->
         <section>
+            <div class="text-box">
+                <h4>Ervaring met talen:</h4>
+            </div>
             <p>HTML</p>
             <div class="container">
                 <div class="skills html">67%</div>
             </div>
-
             <p>CSS</p>
             <div class="container">
                 <div class="skills css">78%</div>
@@ -63,27 +64,26 @@
             <p>PHP</p>
             <div class="container">
                 <div class="skills php">2%</div>
+            </div>
         </section>
     </main>
-    <main>
+    <div class="main">
         <section>
-            <div class="video-1-box"> <video controls src="VideovanKnop.mp4" alt="video-van-knop"> </video> </div>
-            <div class="foto-2-box"> <video controls src="VideovanKnoppen.mp4" alt="video-van-knoppen"> </video> </div>
-            <div class="foto-3-box"> <video controls src="VideovanKnopjes.mp4" alt="video-van-knopjes"> </video> </div>
+            <div class="video-1-box"> <video controls src="video/videovanknop.mp4"> </video> </div>
+            <div class="foto-2-box"> <video controls src="video/videovanknoppen.mp4"> </video> </div>
+            <div class="foto-3-box"> <video controls src="video/videovanknopjes.mp4"> </video> </div>
         </section>
-    </main>
+    </div>
 
     <footer>
         <div class="divider">
-            &copy;2022-2024 PersonaliaEren
+            &copy; 2022-2024 PersonaliaEren
         </div>
-
         <div class="divider">
-            <a href="https://www.youtube.com/channel/UCTtxMUBFJg4ccs8OcMMxHcQ"><img id="icon" src="youtube-button.png" alt="youtube-button"></a>
-            <a href=""><img id="icon" src="Instagram-button.png" alt="Instagram-button"></a>
-            <a href=""><img id="icon" src="Facebook-button.png" alt="Facebook-button"></a>
+            <a href="https://www.youtube.com/channel/UCTtxMUBFJg4ccs8OcMMxHcQ"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.youtube.com/channel/UCTtxMUBFJg4ccs8OcMMxHcQ"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCTtxMUBFJg4ccs8OcMMxHcQ"><i class="fa-brands fa-facebook"></i></a>
         </div>
-
     </footer>
 
     <!-- Sneeuwvlokken erbij gevoegd voor een leuke interactie -->
